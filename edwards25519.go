@@ -215,7 +215,7 @@ func (v *Point) fromP1xP1(p *projP1xP1) *Point {
 	return v
 }
 
-func (v *Point) fromP2(p *ProjP2) *Point {
+func (v *Point) FromP2(p *ProjP2) *Point {
 	v.x.Multiply(&p.X, &p.Z)
 	v.y.Multiply(&p.Y, &p.Z)
 	v.z.Square(&p.Z)
