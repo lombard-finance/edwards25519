@@ -344,6 +344,6 @@ func (v *Point) VarTimeMultiScalarMult(scalars []*Scalar, points []*Point) *Poin
 		tmp2.FromP1xP1(tmp1)
 	}
 
-	v.fromP2(tmp2)
+	v.FromP2(tmp2)
 	return v
 }
