@@ -112,7 +112,7 @@ func TestBasepointTableGeneration(t *testing.T) {
 	basepointTable := basepointTable()
 
 	tmp1 := &projP1xP1{}
-	tmp2 := &projP2{}
+	tmp2 := &ProjP2{}
 	tmp3 := &Point{}
 	tmp3.Set(B)
 	table := make([]affineLookupTable, 32)
